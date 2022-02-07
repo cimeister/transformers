@@ -14,12 +14,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <h3>
+    Edit: please use version on branch `typical-pr`! If you use this version, *do not* set a max length as it leads to undefined behavior.
+</h3>
+<h3>
     Typical Sampling
 </h3>
-    
+ 
 This is a branch of the Hugging Face transformers library with typical sampling implemented. To use, simply pull this repository and install from source, e.g., via `pip install -e .`. To generate text, set the `typical_p` argument in the `generate` function, e.g., 
 ```python
-model.generate( input_ids, do_sample=True, max_length=50, typical_p=0.2)
+model.generate( input_ids, do_sample=True, typical_p=0.2)
 ```
 See paper for algorithm details: https://arxiv.org/abs/2202.00666
 
